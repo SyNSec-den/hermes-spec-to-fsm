@@ -1,4 +1,7 @@
-#HERMES 
+# HERMES 
 
-This project converts natural language specifications to formal a representation such as Finite State Machine (FSM) for further formal security analysis
+This is the official repository of the paper titled "Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications", which is accepted at USENIX Security '24. 
+
+The code and data will be published soon.
+
 
