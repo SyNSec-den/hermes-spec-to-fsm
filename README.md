@@ -26,7 +26,7 @@ We will publish the implementation of the synthesizers soon.
 ## Citation
 
 ```bibtex
-@article{al2023hermes,
+@article{hermes-spec-to-fsm,
   title={Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications},
   author={Ishtiaq, Abdullah Al and Das, Sarkar Snigdha Sarathi and Rashid, Syed Md Mukit and Ranjbar, Ali and Tu, Kai and Wu, Tianwei and Song, Zhezheng and Wang, Weixuan and Akon, Mujtahid and Zhang, Rui and Hussain, Syed Rafiul},
   journal={arXiv preprint arXiv:2310.04381},
