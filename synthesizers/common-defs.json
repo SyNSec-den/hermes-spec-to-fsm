@@ -1,0 +1,114 @@
+{
+  "directive": {
+    "shall": "_SHALL_",
+    "should": "_SHOULD_",
+    "will": "_WILL_",
+    "can": "_CAN_",
+    "may": "_MAY_",
+    "need": "_NEED_"
+  },
+
+  "conjunction": {
+    "/" : "_OR_",
+    "or": "_OR_",
+    "and": "_AND_"
+  },
+
+  "conj_label": {
+    "conj:and" : "_AND_",
+    "conj:or" : "_OR_"
+  },
+
+  "preposition" : {
+    "from" : "_FROM_",
+    "to" : "_TO_",
+    "before" : "_BEFORE_",
+    "after" : "_AFTER_",
+    "for" : "_FOR_",
+    "by" : "_BY_",
+    "during": "_DURING_",
+    "due to": "_DUE_TO_",
+    "in": "_IN_",
+    "of": "_OF_",
+    "with": "_WITH_",
+    "into": "_INTO_"
+  },
+
+  "preposition_label" : {
+    "nmod:from" : "_FROM_",
+    "nmod:to" : "_TO_",
+    "nmod:before" : "_BEFORE_",
+    "nmod:after" : "_AFTER_",
+    "nmod:for" : "_FOR_",
+    "nmod:by" : "_BY_",
+    "nmod:during": "_DURING_",
+    "nmod:due_to": "_DUE_TO_",
+    "nmod:in": "_IN_",
+    "nmod:of": "_OF_",
+    "nmod:with": "_WITH_",
+    "nmod:except": "_EXCEPT_",
+    "nmod:instead_of": "_INSTEAD_OF_",
+    "obl:from" : "_FROM_",
+    "obl:to" : "_TO_",
+    "obl:before" : "_BEFORE_",
+    "obl:after" : "_AFTER_",
+    "obl:for" : "_FOR_",
+    "obl:by" : "_BY_",
+    "obl:during": "_DURING_",
+    "obl:due_to": "_DUE_TO_",
+    "obl:in": "_IN_",
+    "obl:within": "_IN_",
+    "obl:of": "_OF_",
+    "obl:with": "_WITH_",
+    "obl:except": "_EXCEPT_",
+    "obl:except_for": "_EXCEPT_",
+    "obl:into": "_INTO_"
+  },
+
+  "mark": {
+    "until": "_UNTIL_",
+    "without": "_WITHOUT_",
+    "before": "_BEFORE_",
+    "unless": "_UNLESS_"
+  },
+
+
+  "case": {
+    "until": "_UNTIL_",
+    "without": "_WITHOUT_",
+    "before": "_BEFORE_",
+    "except": "_EXCEPT_",
+    "via": "_VIA_",
+    "in": "_IN_"
+  },
+
+  "special": {
+    "specified": "_REFERENCE_",
+    "section": "_SECTION_",
+    "subsection": "_SUBSECTION_",
+    "subclause": "_SUBCLAUSE_",
+    "annex": "_ANNEX_",
+    "ts": "_TS_"
+  },
+
+  "number": {
+    "zero": 0,
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10
+  },
+
+  "ignore_list": [
+    "already",
+    "subclause",
+    "unchanged"
+  ]
+
+}

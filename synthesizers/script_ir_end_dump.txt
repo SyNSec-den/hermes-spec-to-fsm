@@ -1,0 +1,37 @@
+
+
+    <channels>
+        <channel label="chan_UM">
+            <start>UE</start>
+            <end>MME</end>
+            <noisy>FALSE</noisy>
+        </channel>
+
+        <channel label="chan_MU">
+            <start>MME</start>
+            <end>UE</end>
+            <noisy>FALSE</noisy>
+        </channel>
+    </channels>
+
+    <injective_adversaries>
+        <adversary label="inj_adv_UM">
+            <activechannel> chan_UM</activechannel>
+            <alwayson>TRUE</alwayson>
+        </adversary>
+
+        <adversary label="inj_adv_MU">
+            <activechannel> chan_MU</activechannel>
+            <alwayson>TRUE</alwayson>
+        </adversary>
+    </injective_adversaries>
+
+
+    <manual_dump>
+        <instance label="range">
+            <section>DEFINE</section>
+            <text> range := 8; </text>
+        </instance>
+
+    </manual_dump>
+

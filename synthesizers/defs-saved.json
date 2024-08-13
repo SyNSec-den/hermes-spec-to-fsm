@@ -1,0 +1,190 @@
+{
+    "id2agent": {
+        "ue": ["UE", "subscriber", "user"],
+        "mme": ["MME", "network", "Mobility Management Entity"],
+        "core_network": ["core network"],
+        "esm_entity": ["evolved packet system session management entity", "esm entity"],
+        "amf": ["amf"],
+        "emm_entity": ["EMM entity", "receiver"]
+    },
+
+    "id2verb": {
+        "set": ["set", "assign", "populate"],
+        "reset": ["reset"],
+        "equal": ["equal"],
+        "increase": ["increase", "increment"],
+        "decrease": ["decrease", "decrement"],
+        "send": ["send", "sent", "sending", "transmit", "return"],
+        "pass": ["pass"],
+        "forward": ["forward"],
+        "respond": ["respond"],
+        "process": ["process"],
+        "receive": ["receive", "receipt", "reception"],
+        "start": ["start", "restart"],
+        "initiate": ["initiate", "initiating", "invoke"],
+        "activate": ["activate"],
+        "deactivate": ["deactivate"],
+        "enable": ["enable", "enabling"],
+        "disable": ["disable", "disabling"],
+        "stop": ["stop", "stopped", "stopping", "stops", "terminate", "abort", "cancel"],
+        "suspend": ["suspend", "pause"],
+        "expire" : ["expire", "expiry", "timeout"],
+        "add": ["add", "added", "adding", "adds"],
+        "delete": ["delete", "remove", "erase"],
+        "accept": ["accept"],
+        "reject": ["reject"],
+        "apply": ["apply"],
+        "include": ["include", "contain", "including"],
+        "ignore": ["ignore", "drop", "dropped", "dropping", "drops", "discard"],
+        "wait": ["wait", "waited", "waiting", "waits"],
+        "complete": ["complete", "completion", "success"],
+        "establish": ["establish"],
+        "create": ["create"],
+        "derive": ["derive", "derivation"],
+        "handover": ["handover"],
+        "authenticate": ["authenticate"],
+        "replace": ["replace", "overwrite"],
+        "attempt": ["attempt", "try", "tried", "trying", "tries"],
+        "perform": ["perform", "execut"],
+        "save": ["store", "memorize", "save", "saved", "saves", "saving", "hold", "holds", "held", "holding", "keep", "keeps", "keeping", "kept"],
+        "support": ["support"],
+        "become": ["become"],
+        "exist": ["exist", "have"],
+        "generate": ["generate"],
+        "release": ["release"],
+        "consider": ["consider", "mark", "regard"],
+        "find": ["find", "finding", "found", "finds"],
+        "indicate": ["indicate"],
+        "request": ["request"],
+        "enter": ["enter"],
+        "leave": ["leave", "leaves", "left"],
+        "update": ["update"],
+        "provide": ["provide", "give", "given", "giving", "gave", "gives"],
+        "know": ["know", "knew", "known", "knowing", "has", "have"],
+        "fail": ["fail", "fails", "failed", "failing", "unsuccessful"],
+        "camp": ["camp", "camping", "camped", "camps"],
+        "select": ["select", "choose", "chose", "chosen"],
+        "operate": ["operate"],
+        "take": ["take"],
+        "use": ["use", "uses", "using", "taken into use", "used"],
+        "exchange": ["exchange"],
+        "continue": ["continue", "resume", "progress"],
+        "change": ["change", "alter"],
+        "wrap": ["wrap", "wraps", "wrapping", "wrapped"],
+        "calculate": ["calculate", "compute"],
+        "check": ["check"],
+        "maintain": ["maintain"],
+        "match": ["match"],
+        "differ": ["differ"],
+        "cipher": ["cipher", "encipher"],
+        "protect": ["protect"],
+        "configure": ["configure"],
+        "require": ["require", "need", "needs", "needed", "needing", "decide"],
+        "want": ["want", "wants", "wanted", "wanting", "wish", "wishes", "wished", "wishing"]
+    },
+
+    "id2adj": {
+        "ready": ["ready"],
+        "running": ["running"],
+        "available" : ["available"],
+        "valid" : ["valid", "correct"],
+        "invalid" : ["invalid", "incorrect"],
+        "present": ["present"],
+        "absent": ["absent"],
+        "native": ["native"],
+        "new": ["new"],
+        "old": ["old"],
+        "replayed": ["replayed"],
+        "ciphered": ["ciphered"],
+        "partially_ciphered": ["partially ciphered"],
+        "unciphered": ["unciphered"],
+        "integrity_protected": ["integrity protected"],
+        "out_of_range": ["out of range"],
+        "different": ["different"],
+        "same": ["same"],
+        "restricted": ["restricted"]
+    },
+
+    "id2state" : {
+
+    },
+
+    "id2message": {
+
+    },
+
+    "id2procedure": {
+
+    },
+
+    "id2event" : {
+
+
+    },
+
+    "id2timer" : {
+
+    },
+
+    "id2counter": {
+
+    },
+
+    "id2var" : {
+
+    },
+
+    "id2mode": {
+
+    },
+
+    "id2service":{
+
+    },
+
+    "id2field_val": {
+
+    },
+
+    "id2msg_field": {
+
+    },
+
+    "id2cause": {
+
+    },
+
+    "id2misc": {
+
+    },
+
+    "id2other": {
+        "otherwise": ["otherwise"],
+        "other": ["other"],
+        "security" : ["security"],
+        "response": ["response"],
+        "counter": ["counter"],
+        "maximum": ["maximum"],
+        "minimum": ["minimum"],
+        "last_counter": ["this counter", "that counter", "the counter"],
+        "last_message": ["this message", "that message", "the message"],
+        "last_msg_field": ["the ie", "this ie", "this information element", "this value"],
+        "last_timer": ["the timer", "this timer"],
+        "last_procedure": ["the procedure", "this procedure"]
+    },
+
+    "id2num": {
+        "zero": ["zero", "0"],
+        "one": ["one", "1"],
+        "two": ["two", "2"],
+        "three": ["three", "3"],
+        "four": ["four", "4"],
+        "five": ["five", "5"],
+        "six": ["six", "6"],
+        "seven": ["seven", "7"],
+        "eight": ["eight", "8"],
+        "nine": ["nine", "9"],
+        "ten": ["ten", "10"]
+    }
+
+}
