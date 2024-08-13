@@ -37,11 +37,11 @@ It also provides instructions to use the tool.
 ## Citation
 
 ```bibtex
-@article{hermes-spec-to-fsm,
+@inproceedings{ishtiaq2023hermes,
   title={Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications},
-  author={Ishtiaq, Abdullah Al and Das, Sarkar Snigdha Sarathi and Rashid, Syed Md Mukit and Ranjbar, Ali and Tu, Kai and Wu, Tianwei and Song, Zhezheng and Wang, Weixuan and Akon, Mujtahid and Zhang, Rui and Hussain, Syed Rafiul},
-  journal={arXiv preprint arXiv:2310.04381},
-  year={2023}
+  author={Ishtiaq, Abdullah Al and Das, Sarkar Snigdha Sarathi and Rashid, Syed Md Mukit and Ranjbar, Ali and Tu, Kai and Wu, Tianwei and Song, Zhezheng and Wang, Weixuan and Akon, Mujtahid Al-Islam and Zhang, Rui and Hussain, Syed Rafiul},
+  booktitle={Proceedings of USENIX Security Symposium (USENIX Security)},
+  year={2024}
 }
 ```
 
