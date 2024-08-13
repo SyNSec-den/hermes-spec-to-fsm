@@ -1,0 +1,19 @@
+# categories = [ message procedure messagefield state mode status service counter timer algorithm variable ]
+# lines with - indicate which category to search from for replacement, lines indicate which keyword to move and : <to_category>indicates to which category
+# if no : <to_caregory> is indicated, it will be moved to the last mentioned <to_category> category used.
+- definitions
+- abbreviation
+guti : variable
+- misc
+authentication_check : procedure
+imsi_attach : procedure
+imsi_detach : procedure
+plmn_search : procedure
+eps_update_status : status
+current_plmn : variable
+emm_cause_value : variable
+native_guti : variable
+plmn_identity : variable
+security_context_flag : variable
+selected_plmn : variable
+integrity_check : event

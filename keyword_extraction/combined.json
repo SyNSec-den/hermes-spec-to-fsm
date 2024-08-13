@@ -1,0 +1,20 @@
+{
+  "id2agent": {},
+  "id2verb": {},
+  "id2adj": {},
+  "id2state": {},
+  "id2message": {},
+  "id2procedure": {},
+  "id2event": {},
+  "id2timer": {},
+  "id2counter": {},
+  "id2var": {},
+  "id2mode": {},
+  "id2service": {},
+  "id2field_val": {},
+  "id2msg_field": {},
+  "id2cause": {},
+  "id2misc": {},
+  "id2other": {},
+  "id2num": {}
+}

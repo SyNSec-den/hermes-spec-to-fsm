@@ -1,0 +1,40 @@
+AM MRB: An MRB associated with at least an AM RLC bearer for PTP transmission.
+BH RLC channel: An RLC channel between two nodes, which is used to transport backhaul packets.
+Broadcast MRB: A radio bearer configured for MBS broadcast delivery.
+CEIL: Mathematical function used to 'round up' i.e. to the nearest integer having a higher or equal value.
+DAPS bearer: a bearer whose radio protocols are located in both the source gNB and the target gNB during DAPS handover to use both source gNB and target gNB resources.
+Dedicated signalling: Signalling sent on DCCH logical channel between the network and a single UE.
+Dormant BWP: The dormant BWP is one of downlink BWPs configured by the network via dedicated RRC signalling.
+In the dormant BWP, the UE stops monitoring PDCCH on/for the SCell, but continues performing CSI measurements, Automatic Gain Control (AGC) and beam management, if configured. For each serving cell other than the SpCell or PUCCH SCell, the network may configure one BWP as a dormant BWP.
+Field: The individual contents of an information element are referred to as fields.
+FLOOR: Mathematical function used to 'round down' i.e. to the nearest integer having a lower or equal value.
+Global cell identity: An identity to uniquely identifying an NR cell. It is consisted of cellIdentity and plmn-Identity of the first PLMN-Identity in plmn-IdentityList in SIB1.
+Information element: A structural element containing single or multiple fields is referred as information element.
+MBS Radio Bearer: A radio bearer that is configured for MBS delivery.
+Multicast/Broadcast Service: A point-to-multipoint service as defined in TS 23.247 .
+Multicast MRB: A radio bearer configured for MBS multicast delivery.
+NCSG: Network controlled small gap as defined in TS 38.133 .
+NPN-only Cell: A cell that is only available for normal service for NPNs' subscriber. An NPN-capable UE determines that a cell is NPN-only Cell by detecting that the cellReservedForOtherUse IE is set to true while the npn- IdentityInfoList IE is present in CellAccessRelatedInfo.
+NR sidelink communication: AS functionality enabling at least V2X Communication as defined in TS 23.287 , between two or more nearby UEs, using NR technology but not traversing any network node.
+PNI-NPN identity: an identifier of a PNI-NPN comprising of a PLMN ID and a CAG -ID combination.
+Primary Cell: The MCG cell, operating on the primary frequency, in which the UE either performs the initial connection establishment procedure or initiates the connection re-establishment procedure.
+PC5 Relay RLC channel: An RLC channel between L2 U2N Remote UE and L2 U2N Relay UE, which is used to transport packets over PC5 for L2 UE-to-Network relay.
+Primary SCG Cell: For dual connectivity operation, the SCG cell in which the UE performs random access when performing the Reconfiguration with Sync procedure.
+Primary Timing Advance Group: Timing Advance Group containing the SpCell.
+PUCCH SCell: An SCell configured with PUCCH.
+PUSCH-Less SCell: An SCell configured without PUSCH.
+RedCap UE: A UE with reduced capabilities as specified in clause 4.2.21.1 in TS 38.306 .
+RLC bearer configuration: The lower layer part of the radio bearer configuration comprising the RLC and logical channel configurations.
+Secondary Cell: For a UE configured with CA, a cell providing additional radio resources on top of Special Cell.
+Secondary Cell Group: For a UE configured with dual connectivity, the subset of serving cells comprising of the PSCell and zero or more secondary cells.
+Serving Cell: For a UE in RRC_CONNECTED not configured with CA/DC there is only one serving cell comprising of the primary cell. For a UE in RRC_CONNECTED configured with CA/ DC the term 'serving cells' is used to denote the set of cells comprising of the Special Cell(s) and all secondary cells.
+Small Data Transmission: A procedure used for transmission of data and/or signalling over allowed radio bearers in RRC_INACTIVE state (i.e. without the UE transitioning to RRC_CONNECTED state).
+SNPN identity: an identifier of an SNPN comprising of a PLMN ID and an NID combination.
+Special Cell: For Dual Connectivity operation the term Special Cell refers to the PCell of the MCG or the PSCell of the SCG, otherwise the term Special Cell refers to the PCell.
+Split SRB: In MR-DC, an SRB that supports transmission via MCG and SCG as well as duplication of RRC PDUs as defined in TS 37.340 .
+SSB Frequency: Frequency referring to the position of resource element RE=#0 (subcarrier #0) of resource block RB#10 of the SS block.
+U2N Relay UE: A UE that provides functionality to support connectivity to the network for U2N Remote UE(s).
+U2N Remote UE: A UE that communicates with the network via a U2N Relay UE.
+Uu Relay RLC channel: An RLC channel between L2 U2N Relay UE and gNB, which is used to transport packets over Uu for L2 UE-to-Network relay.
+UE Inactive AS Context: UE Inactive AS Context is stored when the connection is suspended and restored when the connection is resumed. It includes information as defined in clause 5.3.8.3.
+V2X sidelink communication: AS functionality enabling V2X Communication as defined in TS 23.285 , between nearby UEs, using E-UTRA technology but not traversing any network node.

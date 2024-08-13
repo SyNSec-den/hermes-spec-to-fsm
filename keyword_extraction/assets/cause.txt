@@ -1,0 +1,228 @@
+Cause #3 - Illegal UE
+This 5GMM cause is sent to the UE when the network refuses service to the UE either because an identity of the
+UE is not acceptable to the network or because the UE does not pass the authentication check.
+Cause #6 - Illegal ME
+This 5GMM cause is sent to the UE if the ME used is not acceptable to the network, e.g. blacklisted.
+Cause #9 - UE identity cannot be derived by the network.
+This 5GMM cause is sent to the UE when the network cannot derive the UE's identity from the 5G-GUTI or 5GS-TMSI because of e.g. no matching identity/context in the network, failure to validate the UE's identity due to
+integrity check failure of the received message.
+Cause #10 - Implicitly de-registered
+This 5GMM cause is sent to the UE either if the network has implicitly de-registered the UE, e.g. after the
+implicit de-registration timer has expired, or if the 5GMM context data related to the subscription does not exist
+in the AMF e.g. because of a AMF restart, or because of a registration request for mobility or registration update
+is routed to a new AMF.
+Cause #5 - PEI not accepted
+This cause is sent to the UE if the network does not accept an initial registration procedure for emergency
+services using a PEI.
+Cause #7 - 5GS services not allowed
+This 5GMM cause is sent to the UE when it is not allowed to operate 5GS services.
+Cause #11 - PLMN not allowed
+This 5GMM cause is sent to the UE if it requests service, or if the network initiates a de-registration request, in a
+PLMN where the UE, by subscription or due to operator determined barring, is not allowed to operate.
+Cause #12 - Tracking area not allowed
+This 5GMM cause is sent to the UE if it requests service, or if the network initiates a de-registration request, in a
+tracking area where the HPLMN determines that the UE, by subscription, is not allowed to operate.
+NOTE 1: If 5GMM cause #12 is sent to a roaming subscriber the subscriber is denied service even if other PLMNs
+are available on which registration was possible.
+Cause #13 - Roaming not allowed in this tracking area
+This 5GMM cause is sent to a UE which requests service, or if the network initiates a de-registration request, in
+a tracking area of a PLMN which by subscription offers roaming to that UE but not in that tracking area.
+Cause #15 - No suitable cells in tracking area
+This 5GMM cause is sent to the UE if it requests service, or if the network initiates a de-registration request, in a
+tracking area where the UE, by subscription, is not allowed to operate, but when it should find another allowed
+tracking area in the same PLMN or an equivalent PLMN.
+NOTE 2: Cause #15 and cause #12 differ in the fact that cause #12 does not trigger the UE to search for another
+allowed tracking area on the same PLMN.
+Cause #27 - N1 mode not allowed
+This 5GMM cause is sent to the UE if it requests service, or if the network initiates a de-registration request, in a
+PLMN where the UE by subscription, is not allowed to operate in N1 mode.
+Cause #72 - Non-3GPP access to 5GCN not allowed
+This 5GMM cause is sent to the UE if it requests accessing 5GCN over non-3GPP access in a PLMN, where the
+UE by subscription, is not allowed to access 5GCN over non-3GPP access.
+congestion/authentication failures
+Cause #20 - MAC failure
+This 5GMM cause is sent to the network if the USIM detects that the MAC in the AUTHENTICATION
+REQUEST message is not fresh.
+Cause #21 - Synch failure
+This 5GMM cause is sent to the network if the USIM detects that the SQN in the AUTHENTICATION
+REQUEST message is out of range.
+Cause #22 - Congestion
+This 5GMM cause is sent to the UE because of congestion in the network (e.g. no channel, facility
+busy/congested etc.).
+Cause #23 - UE security capabilities mismatch
+This 5GMM cause is sent to the network if the UE detects that the UE security capability does not match the one
+sent back by the network.
+Cause #24 - Security mode rejected, unspecified
+This 5GMM cause is sent to the network if the security mode command is rejected by the UE for unspecified
+reasons.
+Cause #26 - Non-5G authentication unacceptable
+This 5GMM cause is sent to the network in N1 mode if the "separation bit" in the AMF field of AUTN is set to 0
+in the AUTHENTICATION REQUEST message (see 3GPP TS 33.501 [24]).
+Cause #28 - Restricted service area
+This 5GMM cause is sent to the UE if it requests service in a tracking area which is a part of the UE's nonallowed area or is not a part of the UE's allowed area.
+Cause #43 - LADN not available
+This 5GMM cause is sent to the UE if the user-plane resources of the PDU session are not established when the
+UE is located outside the LADN service area.
+Cause #65 - Maximum number of PDU sessions reached
+This 5GMM cause is used by the network to indicate that the procedure requested by the UE was rejected as the
+network has reached the maximum number of simultaneously active PDU sessions for the UE.
+Cause #67 - Insufficient resources for specific slice and DNN
+This 5GMM cause is sent by the network to indicate that the requested service cannot be provided due to
+insufficient resources for specific slice and DNN.
+Cause #69 - Insufficient resources for specific slice
+This 5GMM cause is sent by the network to indicate that the requested service cannot be provided due to
+insufficient resources for specific slice.
+Cause #71 - ngKSI already in use
+This 5GMM cause is sent to the network in N1 mode if the ngKSI value received in the AUTHENTICATION
+REQUEST message is already associated with one of the 5G NAS security contexts stored in the UE.
+Cause #73 - Serving network not authorized
+This 5GMM cause is sent to the UE if the UE initiates registration towards a serving network and the serving
+network fails to be authorized by the UE's home network.
+Cause #90 - Payload was not forwarded
+This 5GMM cause is sent by the network to indicate that the requested service cannot be provided due to
+payload could not be forwarded by AMF.
+Cause #91 - DNN not supported or not subscribed in the slice
+This 5GMM cause is sent by the network to indicate that the requested service cannot be provided due to
+payload could not be forwarded by AMF because the DNN is not supported or not subscribed in the slice
+selected by the network if the UE did not indicate a slice, or the DNN is not supported or not subscribed in the
+slice indicated by the UE.
+Cause #92 - Insufficient user-plane resources for the PDU session
+This 5GMM cause is sent by the network to indicate that the requested service cannot be provided due to
+insufficient user-plane resources for the PDU session.
+Cause #95 - Semantically incorrect message
+This 5GMM cause is used to report receipt of a message with semantically incorrect contents.
+Cause #96 - Invalid mandatory information
+This cause 5GMM indicates that the equipment sending this 5GMM cause has received a message with a nonsemantical mandatory IE error.
+Cause #97 - Message type non-existent or not implemented
+This 5GMM cause indicates that the equipment sending this 5GMM cause has received a message with a
+message type it does not recognize either because this is a message not defined, or defined but not implemented
+by the equipment sending this 5GMM cause.
+Cause #98 - Message type not compatible with protocol state
+This 5GMM cause indicates that the equipment sending this 5GMM cause has received a message not
+compatible with the protocol state.
+Cause #99 - Information element non-existent or not implemented
+This 5GMM cause indicates that the equipment sending this 5GMM cause has received a message which
+includes information elements not recognized because the information element identifier is not defined or it is
+defined but not implemented by the equipment sending the 5GMM cause. However, the information element is
+not required to be present in the message in order for the equipment sending the 5GMM cause to process the
+message.
+Cause #100 - Conditional IE error
+This 5GMM cause indicates that the equipment sending this cause has received a message with conditional IE
+errors.
+Cause #101 - Message not compatible with protocol state
+This 5GMM cause indicates that a message has been received which is incompatible with the protocol state.
+Cause #111 - Protocol error, unspecified
+This 5GMM cause is used to report a protocol error event only when no other 5GMM cause in the protocol error
+class applies.
+Cause #8 - Operator Determined Barring
+This 5GSM cause is used by the network to indicate that the requested service was rejected by the SMF due to
+Operator Determined Barring.
+Cause #26 - Insufficient resources
+This 5GSM cause is used by the UE or by the network to indicate that the requested service cannot be provided
+due to insufficient resources.
+Cause #27 - Missing or unknown DNN
+This 5GSM cause is used by the network to indicate that the requested service was rejected by the external DN
+because the DNN was not included although required or if the DNN could not be resolved.
+Cause #28 - Unknown PDU session type
+This 5GSM cause is used by the network to indicate that the requested service was rejected by the external DN
+because the requested PDU session type could not be recognised or is not allowed.
+Cause #29 - User authentication or authorization failed
+This 5GSM cause is used by the network to indicate that the requested service was rejected by the external DN
+due to a failed user authentication, revoked by the external DN, or rejected by 5GCN due to a failed user
+authentication or authorization.
+Cause #31 - Request rejected, unspecified
+This 5GSM cause is used by the network or by the UE to indicate that the requested service or operation or the
+request for a resource was rejected due to unspecified reasons.
+Cause #32 - Service option not supported
+This 5GSM cause is used by the network when the UE requests a service which is not supported by the PLMN.
+Cause #33 - Requested service option not subscribed
+This 5GSM cause is sent when the UE requests a service option for which it has no subscription.
+Cause #35 - PTI already in use
+This 5GSM cause is used by the network to indicate that the PTI included by the UE is already in use by another
+active UE requested procedure for this UE.
+Cause #36 - Regular deactivation
+This 5GSM cause is used to indicate a regular UE or network initiated release of PDU session resources.
+Cause #38 - Network failure
+This 5GSM cause is used by the network to indicate that the requested service was rejected due to an error
+situation in the network.
+Cause #39 - Reactivation requested
+This 5GSM cause is used by the network to request a PDU session reactivation.
+Cause #41 - Semantic error in the TFT operation
+This 5GSM cause is used by the UE to indicate a semantic error in the TFT operation included in the request.
+Cause #42 - Syntactical error in the TFT operation
+This 5GSM cause is used by the UE to indicate a syntactical error in the TFT operation included in the request.
+Cause #43 -Invalid PDU session identity
+This 5GSM cause is used by the network or the UE to indicate that the PDU session identity value provided to it
+is not a valid value or the PDU session identified by the PDU session identity IE in the request or the command
+is not active.
+Cause #44 - Semantic errors in packet filter(s)
+This 5GSM cause is used by the network or the UE to indicate that the requested service was rejected due to one
+or more semantic errors in packet filter(s) of the QoS rule included in the request.
+Cause #45 - Syntactical error in packet filter(s)
+This 5GSM cause is used by the network or the UE to indicate that the requested service was rejected due to one
+or more syntactical errors in packet filter(s) of the QoS rule included in the request.
+Cause #46 -Out of LADN service area
+This 5GSM cause is used by the network to indicate the UE is out of the LADN service area.
+Cause #47 -PTI mismatch
+This 5GSM cause is used by the network or UE to indicate that the PTI provided to it does not match any PTI in
+use.
+Cause #50 - PDU session type IPv4 only allowed
+This 5GSM cause is used by the network to indicate that only PDU session type IPv4 is allowed for the
+requested IP connectivity.
+Cause #51 - PDU session type IPv6 only allowed
+This 5GSM cause is used by the network to indicate that only PDU session type IPv6 is allowed for the
+requested IP connectivity.
+Cause #54 -PDU session does not exist
+This 5GSM cause is used by the network to indicate that the network does not have any information about the
+PDU session which is requested by the UE to transfer between 3GPP access and non-3GPP access or from the
+EPS to the 5GS.
+Cause #67 - Insufficient resources for specific slice and DNN
+This 5GSM cause is by the network to indicate that the requested service cannot be provided due to insufficient
+resources for specific slice and DNN.
+Cause #68 - Not supported SSC mode
+This 5GSM cause is used by the network to indicate that the requested SSC mode is not supported.
+Cause #69 -Insufficient resources for specific slice
+This 5GSM cause is used by the network to indicate that the requested service cannot be provided due to
+insufficient resources for specific slice.
+Cause #70 - Missing or unknown DNN in a slice
+This 5GSM cause is used by the network to indicate that the requested service was rejected by the external DN
+because the DNN was not included although required or if the DNN could not be resolved, in the slice.
+Cause #81 - Invalid PTI value
+This 5GSM cause is used by the network or UE to indicate that the PTI provided to it is unassigned or reserved.
+Cause #82 - Maximum data rate per UE for user-plane integrity protection is too low
+This 5GSM cause is used by the network to indicate that the requested service cannot be provided due to the
+maximum data rate per UE for user-plane integrity protection is too low.
+Cause #83 - Semantic error in the QoS operation
+This 5GSM cause is used by the network or the UE to indicate that the requested service was rejected due to a
+semantic error in the QoS operation included in the request.
+Cause #84 - Syntactical error in the QoS operation
+This 5GSM cause is used by the network or the UE to indicate that the requested service was rejected due to a
+syntactical error in the QoS operation included in the request.
+Cause #85 - Invalid mapped EPS bearer identity
+This 5GSM cause is used by the network or the UE to indicate that the mapped EPS bearer identity value
+provided to it is not a valid value or the mapped EPS bearer identified by the mapped EPS bearer identity does
+not exist.
+Cause #95 - Semantically incorrect message
+This 5GSM cause is used to report receipt of a message with semantically incorrect contents.
+Cause #96 - Invalid mandatory information
+This 5GSM cause indicates that the equipment sending this 5GSM cause has received a message with a nonsemantical mandatory IE error.
+Cause #97 - Message type non-existent or not implemented
+This 5GSM cause indicates that the equipment sending this 5GSM cause has received a message with a message
+type it does not recognize either because this is a message not defined, or defined but not implemented by the
+equipment sending this 5GSM cause.
+Cause #98 - Message type not compatible with protocol state
+This 5GSM cause indicates that the equipment sending this 5GSM cause has received a message not compatible
+with the protocol state.
+Cause #99 - Information element non-existent or not implemented
+This 5GSM cause indicates that the equipment sending this 5GSM cause has received a message which includes
+information elements not recognized because the information element identifier is not defined or it is defined but
+not implemented by the equipment sending the 5GSM cause. However, the information element is not required
+to be present in the message in order for the equipment sending the 5GSM cause to process the message.
+Cause #100 - Conditional IE error
+This 5GSM cause indicates that the equipment sending this cause has received a message with conditional IE
+errors.
+Cause #101 - Message not compatible with protocol state
+This 5GSM cause indicates that a message has been received which is incompatible with the protocol state.
+Cause #111 - Protocol error, unspecified
+This 5GSM cause is used to report a protocol error event only when no other 5GSM cause in the protocol error
+class applies.

@@ -1,0 +1,147 @@
+5GC 5G Core Network
+ACK Acknowledgement
+AM Acknowledged Mode
+ARQ Automatic Repeat Request
+AS Access Stratum
+ASN.1 Abstract Syntax Notation One
+BAP Backhaul Adaptation Protocol
+BCD Binary Coded Decimal
+BFD Beam Failure Detection
+BH Backhaul
+BLER Block Error Rate
+BWP Bandwidth Part
+CA Carrier Aggregation
+CAG Closed Access Group
+CAG-ID Closed Access Group Identifier
+CAPC Channel Access Priority Class
+CBR Channel Busy Ratio
+CCCH Common Control Channel
+CG Cell Group
+CHO Conditional Handover
+CLI Cross Link Interference
+CMAS Commercial Mobile Alert Service
+CP Control Plane
+CPA Conditional PSCell Addition
+CPC Conditional PSCell Change
+C-RNTI Cell RNTI
+CSI Channel State Information
+DAPS Dual Active Protocol Stack
+DC Dual Connectivity
+DCCH Dedicated Control Channel
+DCI Downlink Control Information
+DCP DCI with CRC scrambled by PS-RNTI
+DFN Direct Frame Number
+DL Downlink
+DL-PRS Downlink Positioning Reference Signal
+DL-SCH Downlink Shared Channel
+DM-RS Demodulation Reference Signal
+DRB (user) Data Radio Bearer
+DRX Discontinuous Reception
+DTCH Dedicated Traffic Channel
+EN-DC E-UTRA NR Dual Connectivity with E-UTRA connected to EPC
+EPC Evolved Packet Core
+EPS Evolved Packet System
+ETWS Earthquake and Tsunami Warning System
+E-UTRA Evolved Universal Terrestrial Radio Access
+E-UTRA/5GC E-UTRA connected to 5GC
+E-UTRA/EPC E-UTRA connected to EPC
+E-UTRAN Evolved Universal Terrestrial Radio Access Network
+FDD Frequency Division Duplex
+FFS For Further Study
+G-CS-RNTI Group Configured Scheduling RNTI
+GERAN GSM/EDGE Radio Access Network
+GIN Group ID for Network selection
+GNSS Global Navigation Satellite System
+G-RNTI Group RNTI
+GSM Global System for Mobile Communications
+HARQ Hybrid Automatic Repeat Request
+HRNN Human Readable Network Name
+HSDN High Speed Dedicated Network
+H-SFN Hyper SFN
+IAB Integrated Access and Backhaul
+IAB-DU IAB-node DU
+IAB-MT IAB Mobile Termination
+IDC In-Device Coexistence
+IE Information element
+IMSI International Mobile Subscriber Identity
+kB Kilobyte (1000 bytes)
+L1 Layer 1
+L2 Layer 2
+L3 Layer 3
+LBT Listen Before Talk
+MAC Medium Access Control
+MBS Multicast/Broadcast Service
+MBS FSAI MBS Frequency Selection Area Identity
+MCCH MBS Control Channel
+MCG Master Cell Group
+MDT Minimization of Drive Tests
+MIB Master Information Block
+MPE Maximum Permissible Exposure
+MRB MBS Radio Bearer
+MR-DC Multi-Radio Dual Connectivity
+MTCH MBS Traffic Channel
+MTSI Multimedia Telephony Service for IMS
+MUSIM Multi-Universal Subscriber Identity Module
+N/A Not Applicable
+NE-DC NR E-UTRA Dual Connectivity
+(NG)EN-DC E-UTRA NR Dual Connectivity (covering E-UTRA connected to EPC or 5GC)
+NGEN-DC E-UTRA NR Dual Connectivity with E-UTRA connected to 5GC
+NID Network Identifier
+NPN Non-Public Network
+NR-DC NR-NR Dual Connectivity
+NR/5GC NR connected to 5GC
+PCell Primary Cell
+PDCP Packet Data Convergence Protocol
+PDU Protocol Data Unit
+PEI Paging Early Indication
+PLMN Public Land Mobile Network
+PNI-NPN Public Network Integrated Non-Public Network
+posSIB Positioning SIB
+PPW PRS Processing Window
+PRS Positioning Reference Signal
+PSCell Primary SCG Cell
+PTM Point to Multipoint
+PTP Point to Point
+PWS Public Warning System
+QoE Quality of Experience
+QoS Quality of Service
+RAN Radio Access Network
+RAT Radio Access Technology
+RLC Radio Link Control
+RLM Radio Link Monitoring
+RMTC RSSI Measurement Timing Configuration
+RNA RAN-based Notification Area
+RNTI Radio Network Temporary Identifier
+ROHC Robust Header Compression
+RPLMN Registered Public Land Mobile Network
+RRC Radio Resource Control
+RS Reference Signal
+SBAS Satellite Based Augmentation System
+SCell Secondary Cell
+SCG Secondary Cell Group
+SCS Subcarrier Spacing
+SDT Small Data Transmission
+SFN System Frame Number
+SFTD SFN and Frame Timing Difference
+SI System Information
+SIB System Information Block
+SL Sidelink
+SLSS Sidelink Synchronisation Signal
+SNPN Stand-alone Non-Public Network
+SpCell Special Cell
+SRAP Sidelink Relay Adaptation Protocol
+SRB Signalling Radio Bearer
+SRS Sounding Reference Signal
+SSB Synchronization Signal Block
+TAG Timing Advance Group
+TDD Time Division Duplex
+TEG Timing Error Group
+TM Transparent Mode
+TMGI Temporary Mobile Group Identity
+U2N UE-to-Network
+UDC Uplink Data Compression
+UE User Equipment
+UL Uplink
+UM Unacknowledged Mode
+UP User Plane
+VR Virtual Reality
