@@ -12,6 +12,7 @@ Download and unzip the following file to `neutrex` folder:
 Download the following file to `neutrex/data` folder:  
 - glove.6B.100d.txt: https://drive.google.com/file/d/1qot1XbmuN6R7bwDmT7CwSZBV1Sh1X1VD/view?usp=sharing
 
+
 ### Requirements
 
 - python=3.7
@@ -21,6 +22,7 @@ Download the following file to `neutrex/data` folder:
 - tokenizers==0.13.3
 - torch==1.13.1
 - transformers==4.30.1
+
 
 ## Preprocess
 
@@ -62,10 +64,12 @@ python3 -u -m supar.cmds.crf_con evaluate -d 0 -c crf-con-roberta-en -p model_4g
     --bert=saved_model/
 ```
 
+
 ## Tree to XML
 
 The output trees from NEUTREX can be translated to XML formats with `neutrex/tree_to_xml/tree_to_xml.py`. 
 It takes inputs from a `input.pid` file and will generate outputs to `output.txt`.  
+
 
 ## Acknowledgement
 
