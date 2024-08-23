@@ -37,11 +37,17 @@ It also provides instructions to use the tool.
 ## Citation
 
 ```bibtex
-@inproceedings{ishtiaq2023hermes,
-  title={Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications},
-  author={Ishtiaq, Abdullah Al and Das, Sarkar Snigdha Sarathi and Rashid, Syed Md Mukit and Ranjbar, Ali and Tu, Kai and Wu, Tianwei and Song, Zhezheng and Wang, Weixuan and Akon, Mujtahid Al-Islam and Zhang, Rui and Hussain, Syed Rafiul},
-  booktitle={Proceedings of USENIX Security Symposium (USENIX Security)},
-  year={2024}
+@inproceedings {ishtiaq2023hermes,
+author = {Abdullah Al Ishtiaq and Sarkar Snigdha Sarathi Das and Syed Md Mukit Rashid and Ali Ranjbar and Kai Tu and Tianwei Wu and Zhezheng Song and Weixuan Wang and Mujtahid Akon and Rui Zhang and Syed Rafiul Hussain},
+title = {Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications},
+booktitle = {33rd USENIX Security Symposium (USENIX Security 24)},
+year = {2024},
+isbn = {978-1-939133-44-1},
+address = {Philadelphia, PA},
+pages = {4445--4462},
+url = {https://www.usenix.org/conference/usenixsecurity24/presentation/al-ishtiaq},
+publisher = {USENIX Association},
+month = aug
 }
 ```
 
