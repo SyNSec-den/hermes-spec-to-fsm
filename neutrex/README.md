@@ -6,7 +6,7 @@ Download the following files to `neutrex` folder:
 - model_4g_nas: https://drive.google.com/file/d/11-4ujqtQAwDf8p_7j_leG_hECiAaxw2t/view?usp=sharing
 - model_5g_nas: https://drive.google.com/file/d/1xHqhadH3mgjK9v_0eV7MWSRQAx6ZycJE/view?usp=sharing
 
-Download and unzip the following file to `neutrex` folder:  
+Download and unzip the following file containing `CellulaRoBERTa` to `neutrex` folder:  
 - saved_model.zip: https://drive.google.com/file/d/1R3A5zfM9z6aQzILrfh7aPkSzlQebu5iX/view?usp=sharing
 
 Download the following file to `neutrex/data` folder:  
