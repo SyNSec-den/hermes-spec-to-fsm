@@ -18,6 +18,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
+from script_msg_helpers import *
 from script_DepGraph import *
 from script_verb2ir import *
 from script_build_ir_xml import merge_ir_text
