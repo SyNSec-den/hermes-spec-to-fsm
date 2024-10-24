@@ -235,68 +235,70 @@ def isHeader(text: str) -> (bool, str, str, int):
 
     words = text.split()
     changed_words = changed_text.split()
-
-    if len(changed_text) > 5 and "&gt;" in text:
-        is_header = True
-        header_name = changed_words[0]
-        header_type = "rrc_point"
-        header_level = 200 + int(header_name)
-        header_text = text
-
-    elif len(changed_text) > 5 and changed_text.startswith("#") and changed_text.endswith(";"):
-        is_header = True
-        header_name = changed_words[0]
-        header_type = "cause"
-        header_level = 100
-        header_text = text
-
-    elif len(changed_text) > 5 and changed_text.startswith("\"") and changed_text.endswith("\""):
-        is_header = True
-        header_name = text
-        header_type = "quote"
-        header_level = 100
-        header_text = text
-
-    elif len(changed_text) > 5 and (changed_text.endswith("shall:") or changed_text.endswith("shall :")):
-        is_header = True
-        header_name = text
-        header_type = "shall"
-        header_level = 100
-        header_text = text
-
-    elif len(changed_words) > 2 and changed_words[1] == ")" and not changed_text.endswith(".") \
-            and changed_words[0].isalpha() and changed_text[0] != "i" and changed_text[0] != "v":
-        is_header = True
-        header_name = changed_words[0]
-        header_type = "alpha_item"
-        header_level = 100
-        header_text = text
-
-    elif len(words) > 2 and words[1] == ")" and not changed_text.endswith(".") and words[0].isnumeric():
-        is_header = True
-        header_name = changed_words[0]
-        header_type = "num_item"
-        header_level = 100
-        header_text = text
-
-    elif len(words) > 2 and words[1] == ")" and not changed_text.endswith(".") \
-            and words[0].isalpha() and (changed_text[0] == "i" or changed_text[0] == "v"):
-        is_header = True
-        header_name = changed_words[0]
-        header_type = "roman_item"
-        header_level = 100
-        header_text = text
-
-    else:
-        is_section, section_level = isSectionNum(changed_words[0])
-        if is_section and len(changed_words) > 1 and changed_words[1] != ")":
+    try:
+        if len(changed_text) > 5 and "&gt;" in text:
             is_header = True
             header_name = changed_words[0]
-            header_type = "section_header"
-            header_level = section_level
+            header_type = "rrc_point"
+            header_level = 200 + int(header_name)
             header_text = text
 
-    return is_header, header_name, header_type, header_level, header_text
+        elif len(changed_text) > 5 and changed_text.startswith("#") and changed_text.endswith(";"):
+            is_header = True
+            header_name = changed_words[0]
+            header_type = "cause"
+            header_level = 100
+            header_text = text
+
+        elif len(changed_text) > 5 and changed_text.startswith("\"") and changed_text.endswith("\""):
+            is_header = True
+            header_name = text
+            header_type = "quote"
+            header_level = 100
+            header_text = text
+
+        elif len(changed_text) > 5 and (changed_text.endswith("shall:") or changed_text.endswith("shall :")):
+            is_header = True
+            header_name = text
+            header_type = "shall"
+            header_level = 100
+            header_text = text
+
+        elif len(changed_words) > 2 and changed_words[1] == ")" and not changed_text.endswith(".") \
+                and changed_words[0].isalpha() and changed_text[0] != "i" and changed_text[0] != "v":
+            is_header = True
+            header_name = changed_words[0]
+            header_type = "alpha_item"
+            header_level = 100
+            header_text = text
+
+        elif len(words) > 2 and words[1] == ")" and not changed_text.endswith(".") and words[0].isnumeric():
+            is_header = True
+            header_name = changed_words[0]
+            header_type = "num_item"
+            header_level = 100
+            header_text = text
+
+        elif len(words) > 2 and words[1] == ")" and not changed_text.endswith(".") \
+                and words[0].isalpha() and (changed_text[0] == "i" or changed_text[0] == "v"):
+            is_header = True
+            header_name = changed_words[0]
+            header_type = "roman_item"
+            header_level = 100
+            header_text = text
+
+        else:
+            is_section, section_level = isSectionNum(changed_words[0])
+            if is_section and len(changed_words) > 1 and changed_words[1] != ")":
+                is_header = True
+                header_name = changed_words[0]
+                header_type = "section_header"
+                header_level = section_level
+                header_text = text
+
+        return is_header, header_name, header_type, header_level, header_text
+    except ValueError:
+        return False, "", "", -1, ""
 
 
 def modify_section_numbers(text: str) -> str:
